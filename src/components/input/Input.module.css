@@ -1,0 +1,23 @@
+label{
+  color: var(--MarineBlue);
+  font-weight: 500;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  color: var(--MarineBlue);
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  border: 1px solid var(--LightGray);
+  margin-top: 0.2em;
+}
+
+input:focus{
+  outline: 1px solid var(--PurplishBlue);
+}
+
+.boxInput{
+  padding-top: 1.5em;
+}
