@@ -1,0 +1,17 @@
+.buttonNext {
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--MarineBlue);
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 500;
+}
+
+.buttonNext:hover  {
+    background-color: var(--Hover);
+    color: var(--White);
+    cursor: pointer;
+}
+
