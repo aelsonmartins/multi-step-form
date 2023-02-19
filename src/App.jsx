@@ -1,5 +1,4 @@
-import './App.module.css';
-import { CadastroPessoal } from './components/cadastroPessoal/CadastroPessoal.jsx';
+// Global
 import './global.css'; // css GLOBAL
 import './script.js'; /// js GLOBAL
 
@@ -11,8 +10,24 @@ import 'primereact/resources/primereact.min.css';
 //icons
 import 'primeicons/primeicons.css';
 
+//Components
+import { SideBar } from './components/SideBar';
+import { CadastroPessoal } from './components/cadastroPessoal/CadastroPessoal.jsx';
+import { ButtonNextStep } from './components/ButtonNextStep';
+
+// Styles
+import styles from './App.module.css';
+
 function App() {
-  return <CadastroPessoal />;
+  return (
+    <div className={styles.wrapper}>
+      <SideBar />
+      <main>
+        <CadastroPessoal />
+        <ButtonNextStep />
+      </main>
+    </div>
+  );
 }
 
 export default App;
